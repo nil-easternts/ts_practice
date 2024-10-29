@@ -5,6 +5,7 @@ import { RootStackParamList } from '../AppNavigation/AppNavigator';
 import { useRoute } from '@react-navigation/native';
 import Comp from './Comp';
 import { StyleProvider } from '../Component/StyleContext';
+import Products from './Products';
 
 interface HomeProps {
     navigation: StackNavigationProp<RootStackParamList, 'Home'>;
@@ -75,10 +76,11 @@ const Home = ({ navigation }: HomeProps) => {
     return (
        <StyleProvider>
          <View>
-            <Text style={{ color: 'red',textAlign:'center' }}>{state.count}</Text>
+            {/* <Text style={{ color: 'red',textAlign:'center' }}>{state.count}</Text>
             <Button title="Go to Chat Screen" onPress={handleNavigate} />
             <Button title="increment" onPress={increase} />
-            <Comp />
+            <Comp /> */}
+            <Products />
             <TextInput ref={ref} />
         </View>
        </StyleProvider>
