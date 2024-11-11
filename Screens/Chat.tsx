@@ -9,6 +9,7 @@ interface ChatProps{
 }
 const Chat = ({navigation}:ChatProps) => {
     const route=useRoute()
+    const route3=useRoute()
     console.log(route)
   return (
     <View>

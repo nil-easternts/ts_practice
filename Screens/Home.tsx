@@ -45,7 +45,6 @@ const reducer = (state: Mystate, action: Action): Mystate => {
 };
 const Home = ({navigation}: HomeProps) => {
   const [counter, setCounter] = useState<number>(0);
-  const [nil, setNil] = useState<string>('nil');
   const [name, setName] = useState<string>('');
   const [isLoad, setIsLoad] = useState<boolean>(false);
   const [user, setUser] = useState<User>({
